@@ -1,0 +1,9 @@
+{
+  "name": "news-image-20261119",
+  "private": true,
+  "type": "module",
+  "description": "Copy the rendered 1024x1024 front page to the harness output directory.",
+  "scripts": {
+    "start": "node main.ts"
+  }
+}

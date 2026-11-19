@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Day — 19 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1024px; height: 1024px; overflow: hidden; background: #f7f2e7; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #14110d; }
+  .page {
+    width: 1024px; height: 1024px; padding: 10px 14px 6px;
+    display: flex; flex-direction: column;
+    background: #f7f2e7;
+  }
+  .topbar {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 2px solid #14110d; padding-bottom: 4px;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+  .topbar .right { letter-spacing: 1.2px; font-weight: 600; }
+  h1.date {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 55px; line-height: 1.0; letter-spacing: -1.6px;
+    font-weight: 700; margin: 5px 0 1px;
+  }
+  .deck {
+    font-family: Georgia, 'Times New Roman', serif; font-style: italic;
+    font-size: 16.5px; color: #a3241f; margin: 0 0 5px; white-space: nowrap;
+    overflow: hidden;
+  }
+  .regions { display: flex; height: 25px; margin: 0 0 6px; }
+  .regions div {
+    flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;
+    color: #fff; font-size: 9.5px; font-weight: 700; letter-spacing: .7px;
+    text-transform: uppercase; white-space: nowrap;
+  }
+  .regions b { font-size: 11px; font-weight: 700; }
+  .numbers {
+    display: flex; border-top: 1.5px solid #14110d; border-bottom: 1.5px solid #14110d;
+    padding: 5px 0 4px; margin-bottom: 6px;
+  }
+  .numbers div {
+    flex: 1; text-align: center; padding: 0 5px; border-left: 1px solid rgba(20,17,13,.35);
+  }
+  .numbers div:first-child { border-left: 0; }
+  .numbers .big {
+    font-family: Georgia, serif; font-size: 21px; font-weight: 700; line-height: 1.05;
+    letter-spacing: -.4px;
+  }
+  .numbers .cap { font-size: 8.8px; line-height: 1.15; color: #3a332a; margin-top: 1px; }
+
+  .cards {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); gap: 5px 6px; height: 410px;
+  }
+  .card { border: 1px solid rgba(20,17,13,.55); background: #fffdf6; display: flex; flex-direction: column; overflow: hidden; }
+  .art { height: 52px; border-bottom: 1px solid rgba(20,17,13,.35); }
+  .art svg { display: block; width: 100%; height: 100%; }
+  .cbody { padding: 3px 5px 4px; display: flex; flex-direction: column; gap: 1px; }
+  .meta { font-size: 8.4px; font-weight: 700; letter-spacing: .55px; text-transform: uppercase; }
+  .card h3 {
+    font-family: Georgia, serif; font-size: 13.4px; line-height: 1.12;
+    margin: 0; font-weight: 700;
+  }
+  .card p { margin: 1px 0 0; font-size: 9.3px; line-height: 1.16; color: #2b251d; }
+
+  .also-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 2px solid #14110d; border-top: 1px solid rgba(20,17,13,.55);
+    margin-top: 7px; padding: 3px 0 2px;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  }
+  .also-head span:last-child { font-size: 9.5px; letter-spacing: .9px; font-weight: 600; }
+  .briefs {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr); gap: 2px 14px; height: 292px; padding-top: 4px;
+  }
+  .brief { border-top: 1px solid rgba(20,17,13,.18); padding-top: 2px; overflow: hidden; }
+  .brief .bhead { font-size: 10px; font-weight: 700; line-height: 1.12; }
+  .brief .bhead i {
+    display: inline-block; width: 6px; height: 6px; margin-right: 4px;
+    vertical-align: 1px; font-style: normal;
+  }
+  .brief .bbody { font-size: 9.2px; line-height: 1.14; color: #2b251d; margin-top: 1px; }
+
+  .datecheck {
+    border: 2px solid #a3241f; background: #fbf6ea;
+    margin-top: 7px; padding: 4px 6px;
+    font-size: 9.1px; line-height: 1.25;
+  }
+  .datecheck b { letter-spacing: .9px; }
+  .datecheck .tag {
+    color: #a3241f; font-weight: 700; letter-spacing: .8px; text-transform: uppercase;
+    font-size: 9.4px;
+  }
+  .datecheck .line2 { color: #3a332a; }
+  .footer {
+    margin-top: auto; border-top: 1px solid rgba(20,17,13,.55); padding-top: 3px;
+    font-size: 8.6px; line-height: 1.25; color: #3a332a;
+  }
+  .footer b { color: #14110d; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <span>The World in One Day</span>
+    <span class="right">Thursday's News · One Page · 36 Stories · 7 Regions</span>
+  </div>
+
+  <h1 class="date">Thursday 19 November 2026</h1>
+  <p class="deck">Three leaders meet in Shenzhen · Anthropic's $64bn listing · GTA VI lands after 13 years</p>
+
+  <div class="regions">
+    <div style="background:#2f5d9e">Europe <b>7</b></div>
+    <div style="background:#1f7a5c">The Americas <b>11</b></div>
+    <div style="background:#b5452f">Asia-Pacific <b>6</b></div>
+    <div style="background:#8a6d1f">Middle East <b>5</b></div>
+    <div style="background:#6b4a8a">Africa <b>4</b></div>
+    <div style="background:#25707d">Oceania <b>2</b></div>
+    <div style="background:#555">World <b>1</b></div>
+  </div>
+
+  <div class="numbers">
+    <div><div class="big">$64bn</div><div class="cap">raised by Anthropic in the year's largest IPO</div></div>
+    <div><div class="big">12.1m</div><div class="cap">GTA VI pre-orders before the midnight launch</div></div>
+    <div><div class="big">200,000</div><div class="cap">evacuated as Cyclone Akvan nears Odisha</div></div>
+    <div><div class="big">$120bn</div><div class="cap">a year in adaptation finance on the COP31 table</div></div>
+    <div><div class="big">$190.4m</div><div class="cap">paid for a Van Gogh landscape in London</div></div>
+    <div><div class="big">13 yrs</div><div class="cap">between GTA V and its sequel, out today</div></div>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="art" style="background:#e6ecf6">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="4" y="26" width="20" height="14" fill="#2f3b4a"/>
+          <rect x="27" y="18" width="18" height="22" fill="#3d4c5e"/>
+          <rect x="48" y="23" width="16" height="17" fill="#334050"/>
+          <rect x="8" y="10" width="17" height="11" fill="#b5452f"/><circle cx="11.5" cy="15.5" r="2.6" fill="#f2c94c"/>
+          <rect x="30" y="6" width="17" height="11" fill="#2f5d9e"/><rect x="33" y="8.5" width="11" height="6" fill="#fff" opacity=".85"/>
+          <rect x="52" y="9" width="17" height="11" fill="#f2f2f2"/><rect x="52" y="12.5" width="17" height="2.6" fill="#2f5d9e"/><rect x="52" y="16" width="17" height="2.6" fill="#b5452f"/>
+          <rect x="70" y="20" width="12" height="20" fill="#2f3b4a"/>
+          <rect x="84" y="14" width="9" height="26" fill="#3d4c5e"/>
+          <rect x="95" y="24" width="21" height="16" fill="#334050"/>
+          <rect x="0" y="40" width="120" height="4" fill="#1f7a5c"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#b5452f">1 · Asia-Pacific · Shenzhen</div>
+        <h3>Xi, Trump and Putin hold first three-way summit</h3>
+        <p>The nuclear powers meet on APEC's margins, with arms control and Ukraine on the table.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#e7f0ec">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#12332c"/>
+          <text x="6" y="14" font-family="Segoe UI, Arial" font-size="11" font-weight="700" fill="#e9f3ee">ANT</text>
+          <text x="72" y="13" font-family="Segoe UI, Arial" font-size="6" fill="#9fd2bd">$78.00</text>
+          <polyline points="6,34 20,30 34,31 48,24 62,26 76,17 90,19 104,9 114,11" fill="none" stroke="#5fd0a5" stroke-width="2"/>
+          <g fill="#5fd0a5"><rect x="14" y="27" width="3" height="7"/><rect x="42" y="21" width="3" height="9"/><rect x="70" y="14" width="3" height="11"/><rect x="98" y="6" width="3" height="12"/></g>
+          <rect x="0" y="39" width="120" height="5" fill="#1f7a5c"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#1f7a5c">2 · The Americas · New York</div>
+        <h3>Anthropic debuts in the year's biggest IPO</h3>
+        <p>The Claude maker raises about $64bn and is valued near $1.4tn, six times oversubscribed.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#f6e4d8">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#2a1a2e"/>
+          <circle cx="60" cy="30" r="13" fill="#f2a65a"/>
+          <rect x="0" y="30" width="120" height="14" fill="#1b1020"/>
+          <rect x="8" y="22" width="9" height="10" fill="#3b2440"/>
+          <rect x="20" y="18" width="7" height="14" fill="#46304c"/>
+          <rect x="92" y="20" width="8" height="12" fill="#3b2440"/>
+          <rect x="103" y="24" width="9" height="8" fill="#46304c"/>
+          <text x="6" y="10" font-family="Segoe UI, Arial" font-size="7" font-weight="700" letter-spacing="1" fill="#f2a65a">OUT TODAY</text>
+          <rect x="0" y="41" width="120" height="3" fill="#b5452f"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#b5452f">3 · The Americas · New York</div>
+        <h3>GTA VI arrives after 13 years, without PC</h3>
+        <p>Rockstar's sequel unlocks at midnight in every zone; 12.1m digital orders are booked.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#e9eef5">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#dfe9f2"/>
+          <circle cx="60" cy="22" r="17" fill="none" stroke="#2f5d9e" stroke-width="2.4" opacity=".55"/>
+          <circle cx="60" cy="22" r="11" fill="none" stroke="#2f5d9e" stroke-width="2.4" opacity=".75"/>
+          <circle cx="60" cy="22" r="4.5" fill="#2f5d9e"/>
+          <path d="M4 36 q12 -6 24 0 t24 0 t24 0 t24 0" fill="none" stroke="#25707d" stroke-width="2.2"/>
+          <path d="M4 41 q12 -6 24 0 t24 0 t24 0 t24 0" fill="none" stroke="#25707d" stroke-width="2" opacity=".6"/>
+          <path d="M18 8 l6 8 -4 1 8 8" fill="none" stroke="#b5452f" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#b5452f">4 · Asia-Pacific · Odisha</div>
+        <h3>Cyclone Akvan forces 200,000 from the coast</h3>
+        <p>A red alert covers 11 districts as the storm stalls over the Bay of Bengal.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#f2ecdc">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#f0eadb"/>
+          <circle cx="24" cy="14" r="8" fill="#d9a13b"/>
+          <g stroke="#8a6d1f" stroke-width="2.2"><line x1="24" y1="0" x2="24" y2="3"/><line x1="10" y1="14" x2="13" y2="14"/><line x1="35" y1="14" x2="38" y2="14"/><line x1="14" y1="4" x2="16" y2="6"/><line x1="34" y1="4" x2="32" y2="6"/></g>
+          <rect x="46" y="22" width="68" height="9" fill="#2f5d9e"/>
+          <rect x="46" y="22" width="44" height="9" fill="#b5452f"/>
+          <rect x="46" y="33" width="68" height="5" fill="#14110d" opacity=".25"/>
+          <rect x="52" y="34" width="20" height="3" fill="#25707d"/>
+          <rect x="78" y="34" width="30" height="3" fill="#6b4a8a"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#8a6d1f">5 · Europe · Antalya</div>
+        <h3>COP31 enters its last 48 hours with finance open</h3>
+        <p>Ministers weigh $120bn a year for adaptation while the phase-out text stays bracketed.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#efe8dc">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#efe8dc"/>
+          <rect x="10" y="34" width="100" height="4" fill="#b5452f"/>
+          <rect x="16" y="12" width="88" height="5" fill="#8a6d1f"/>
+          <rect x="16" y="17" width="88" height="17" fill="#e2d5b8"/>
+          <g fill="#fbf6ea"><rect x="21" y="20" width="7" height="14"/><rect x="33" y="20" width="7" height="14"/><rect x="45" y="20" width="7" height="14"/><rect x="57" y="20" width="7" height="14"/><rect x="69" y="20" width="7" height="14"/><rect x="81" y="20" width="7" height="14"/><rect x="93" y="20" width="7" height="14"/></g>
+          <polygon points="16,12 60,3 104,12" fill="#8a6d1f"/>
+          <rect x="56" y="30" width="9" height="4" fill="#b5452f"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#b5452f">6 · Asia-Pacific · The Hague</div>
+        <h3>World court rules against Myanmar on Rohingya</h3>
+        <p>The ICJ finds for The Gambia in the 2017 case; 730,000 refugees remain in Bangladesh.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#e6edf8">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#dfe8f6"/>
+          <rect x="0" y="0" width="46" height="44" fill="#2f5d9e"/>
+          <rect x="46" y="0" width="46" height="44" fill="#f2d64b"/>
+          <rect x="92" y="0" width="28" height="44" fill="#b5452f"/>
+          <g fill="#14110d" opacity=".35"><rect x="8" y="8" width="10" height="10"/><rect x="24" y="18" width="12" height="12"/><rect x="56" y="6" width="14" height="8"/><rect x="74" y="24" width="10" height="10"/><rect x="98" y="12" width="12" height="8"/></g>
+          <path d="M8 38 l16 -10 14 6 14 -12 20 8 16 -6" fill="none" stroke="#a3241f" stroke-width="2.4" stroke-dasharray="4 3"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#2f5d9e">7 · Europe · Kupiansk</div>
+        <h3>Ukraine holds the line as Kyiv eyes the summit</h3>
+        <p>Assaults continue in the north-east; Washington says the war is not on the agenda.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#f6e9d8">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#f3e2c9"/>
+          <rect x="0" y="30" width="120" height="14" fill="#ddcaa7"/>
+          <g fill="#14110d"><rect x="16" y="8" width="28" height="12"/><rect x="44" y="14" width="27" height="4"/><rect x="26" y="4" width="9" height="4"/><circle cx="23" cy="21" r="3"/><circle cx="39" cy="21" r="3"/><circle cx="49" cy="21" r="2.6"/></g>
+          <rect x="0" y="24" width="120" height="7" fill="#8a6d1f"/>
+          <g fill="#f3e2c9"><rect x="10" y="24" width="3" height="7"/><rect x="34" y="24" width="3" height="7"/><rect x="58" y="24" width="3" height="7"/><rect x="82" y="24" width="3" height="7"/><rect x="106" y="24" width="3" height="7"/></g>
+          <circle cx="104" cy="9" r="3.2" fill="#a3241f"/>
+          <rect x="96" y="14" width="16" height="2" fill="#a3241f" opacity=".6"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#8a6d1f">8 · Middle East · Gaza</div>
+        <h3>Israeli tanks cross the Yellow Line in Gaza</h3>
+        <p>Hamas calls the move a truce violation; mediators seek a new withdrawal timetable.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#f4e7d2">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#efe1c4"/>
+          <rect x="16" y="3" width="88" height="38" fill="#f8edd2" stroke="#8a6d1f" stroke-width="2"/>
+          <g fill="#d9a13b"><circle cx="70" cy="20" r="5"/><circle cx="65" cy="26" r="5"/><circle cx="58" cy="27" r="5"/><circle cx="52" cy="23" r="5"/><circle cx="51" cy="16" r="5"/><circle cx="55" cy="10" r="5"/><circle cx="62" cy="8" r="5"/><circle cx="69" cy="11" r="5"/></g>
+          <circle cx="60" cy="18" r="5" fill="#6b4a8a"/>
+          <path d="M60 24 l-4 8 h8 z" fill="#1f7a5c"/>
+          <rect x="50" y="32" width="20" height="7" fill="#2f5d9e"/>
+          <rect x="52" y="31" width="16" height="2" fill="#2f5d9e"/>
+          <rect x="4" y="40" width="112" height="1" fill="#14110d" opacity=".4"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#2f5d9e">9 · Europe · London</div>
+        <h3>Van Gogh landscape sells for $190.4m</h3>
+        <p>The sale caps a week of dispute over the painting's ownership in the Nazi era.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#e4efe9">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#e2eee7"/>
+          <polyline points="6,10 24,14 40,12 56,22 72,26 88,24 104,34 114,36" fill="none" stroke="#1f7a5c" stroke-width="2.6"/>
+          <g fill="#1f7a5c" opacity=".18"><rect x="6" y="10" width="108" height="26"/></g>
+          <line x1="0" y1="24" x2="120" y2="24" stroke="#a3241f" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="6" y="41" font-family="Segoe UI, Arial" font-size="8" font-weight="700" fill="#1f7a5c">6.25%</text>
+          <text x="52" y="41" font-family="Segoe UI, Arial" font-size="7" fill="#3a332a">BANXICO DECISION</text>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#1f7a5c">10 · The Americas · Mexico City</div>
+        <h3>Banxico cuts rates to 6.25% in a 3-2 vote</h3>
+        <p>Policymakers signal a slower path as the peso steadies and inflation cools.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#e9e6f0">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#e8e4ef"/>
+          <rect x="8" y="12" width="104" height="26" fill="#cdc4dc"/>
+          <polygon points="8,12 60,2 112,12" fill="#6b4a8a"/>
+          <g fill="#fbf6ea"><rect x="15" y="18" width="6" height="14"/><rect x="28" y="18" width="6" height="14"/><rect x="41" y="18" width="6" height="14"/><rect x="54" y="18" width="6" height="14"/><rect x="67" y="18" width="6" height="14"/><rect x="80" y="18" width="6" height="14"/><rect x="93" y="18" width="6" height="14"/></g>
+          <rect x="10" y="32" width="100" height="3" fill="#6b4a8a"/>
+          <rect x="52" y="36" width="16" height="4" fill="#6b4a8a"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#6b4a8a">11 · Europe · Frankfurt</div>
+        <h3>Deutsche Bank handled $62bn tied to Epstein</h3>
+        <p>The figure, reported by the FT, widens scrutiny of lenders that kept the accounts.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="art" style="background:#e6efe9">
+        <svg viewBox="0 0 120 44" aria-hidden="true">
+          <rect x="0" y="0" width="120" height="44" fill="#e4efe8"/>
+          <polygon points="60,4 64,14 76,14 66,21 70,32 60,25 50,32 54,21 44,14 56,14" fill="#b5452f"/>
+          <path d="M10 36 q14 -8 26 0" fill="none" stroke="#1f7a5c" stroke-width="2.2"/>
+          <path d="M84 36 q14 -8 26 0" fill="none" stroke="#2f5d9e" stroke-width="2.2"/>
+          <g stroke="#14110d" stroke-width="1.4"><line x1="18" y1="10" x2="42" y2="18"/><line x1="102" y1="10" x2="78" y2="18"/></g>
+          <circle cx="18" cy="10" r="2.5" fill="#1f7a5c"/><circle cx="102" cy="10" r="2.5" fill="#2f5d9e"/>
+        </svg>
+      </div>
+      <div class="cbody">
+        <div class="meta" style="color:#1f7a5c">12 · The Americas · Ottawa</div>
+        <h3>Carney recasts Canada's China policy before APEC</h3>
+        <p>Ottawa weighs tariffs and rare-earth deals as the prime minister seeks a steadier line.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="also-head">
+    <span>Also on Thursday 19 November — 24 more stories</span>
+    <span>Reported 00:00–23:59 GMT</span>
+  </div>
+
+  <div class="briefs">
+    <div class="brief"><div class="bhead"><i style="background:#2f5d9e"></i>13 Crimea · Kerch bridge strike halts traffic</div><div class="bbody">Damage reported on the span; queues build at the crossing.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#2f5d9e"></i>14 Kyiv · War kept off the summit agenda</div><div class="bbody">Washington says the war is not on the agenda; Kyiv fears a side deal.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#b5452f"></i>15 New Delhi · Modi receives the Prince of Wales</div><div class="bbody">The visit opens a week of UK-India trade and defence talks.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#b5452f"></i>16 Tokyo · Japan and India review defence pact</div><div class="bbody">Ministers agree to widen joint drills and maritime patrols.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#b5452f"></i>17 Bengaluru · Amazon pledges $7bn for robotics</div><div class="bbody">The spending is aimed at 2030 and beyond, the company says.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#6b4a8a"></i>18 Mogadishu · Somalia takes EU arms under new pact</div><div class="bbody">Brussels lifts restrictions as the army presses its offensive.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#6b4a8a"></i>19 Nairobi · Floods kill six as the rains persist</div><div class="bbody">Whole neighbourhoods are cut off east of the capital.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#6b4a8a"></i>20 Benghazi · Cocaine and pills seized in the east</div><div class="bbody">Officials call it the country's largest drug haul.</div></div>
+
+    <div class="brief"><div class="bhead"><i style="background:#6b4a8a"></i>21 Cape Town · Crews contain Table Mountain fire</div><div class="bbody">No homes are lost; the cableway reopens on Friday.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>22 Caracas · Hegseth signs a military accord</div><div class="bbody">The US-Venezuela deal covers training and basing, officials say.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>23 Sacramento · California braces for a river storm</div><div class="bbody">Flood warnings cover the north; 300 schools shut.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>24 La Paz · El Niño emergency hits 78,000 homes</div><div class="bbody">Bolivia frees relief funds as crops fail on the altiplano.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>25 Bogotá · National strike halts the capital</div><div class="bbody">The US embassy issues a security alert for Thursday.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>26 Santa Clara · Nvidia spy probe shadows earnings</div><div class="bbody">Huang stays off the call as Beijing reviews the case.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>27 Washington · Dudley takes NWSL rookie award</div><div class="bbody">Gotham's forward wins the vote after a 14-goal season.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#1f7a5c"></i>28 Miami · Florida storms prompt night rescues</div><div class="bbody">A foot of rain falls in Hollywood; 300 calls in a night.</div></div>
+
+    <div class="brief"><div class="bhead"><i style="background:#8a6d1f"></i>29 Riyadh · Gulf leaders urge Trump to hold fire</div><div class="bbody">The message is delivered ahead of any new strike decision.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#8a6d1f"></i>30 Baghdad · Six ISIL militants given life terms</div><div class="bbody">The French cell was convicted over a 2015 plot.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#8a6d1f"></i>31 Manama · Bahrain refinery back after attack</div><div class="bbody">Output resumes at reduced rates, the operator says.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#8a6d1f"></i>32 Jazan · Missile stopped over southern Saudi</div><div class="bbody">Debris falls near the port; no casualties are reported.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#25707d"></i>33 Auckland · New Zealand plays GTA VI first</div><div class="bbody">Midnight arrives earliest there, opening the global launch.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#25707d"></i>34 Sydney · Canberra pledges $2bn for the Pacific</div><div class="bbody">The package funds sea walls and early-warning systems.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#555"></i>35 Washington · Musk: Russia would have won</div><div class="bbody">The Starlink claim draws a sharp response from Kyiv's allies.</div></div>
+    <div class="brief"><div class="bhead"><i style="background:#2f5d9e"></i>36 Paris · Mélenchon would win, a poll finds</div><div class="bbody">The left leader is seen as the strongest 2027 challenger.</div></div>
+  </div>
+
+  <div class="datecheck">
+    <div><span class="tag">Date check — first reported Wednesday 18 Nov, so not on this page:</span>
+    the Iranian drone interception · the EU's proposed €45bn loan for Ukraine · the House Democrats' 251–11 vote ·
+    Voyager 1 crossing one light-day at 10:16 GMT · Alaska's Pelotla win.</div>
+    <div class="line2"><b>First reported today, GMT:</b> the Shenzhen summit opens 04:10 · Anthropic prices its IPO 13:30 · GTA VI unlocks 00:00 in Auckland.</div>
+  </div>
+
+  <div class="footer">
+    <b>Every story here happened, or was first reported, on Thursday 19 November 2026.</b>
+    Disputed claims are attributed, not stated as fact. All 36 items are dated to this edition; the 18 November items above are listed only to show what was excluded.
+    Sources: Reuters, AP, AFP, BBC, CNBC, The Hindu, Financial Times, NY Post, Al Jazeera. Original flat illustrations; no photographs.
+  </div>
+
+</div>
+</body>
+</html>
